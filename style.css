@@ -408,24 +408,50 @@ footer .social-links a:hover {
     color: #ffcc00;
 }
 
-/* Media query for smaller screens */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .card-back h3 {
-        font-size: 1.2rem;
+    header .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
-    .card-back li {
-        font-size: 0.9rem;
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact input,
+    .contact textarea {
+        max-width: 90%;
+    }
+
+    .contact button {
+        width: 90%;
     }
 }
 
-@media (max-width: 768px) {
-    .card {
-        width: 90%;
-        height: auto; /* Allow height to adjust based on content */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
     }
 
-    .card:hover {
-        transform: scale(1.05); /* Slightly smaller zoom for smaller screens */
+    .team-member h3 {
+        font-size: 1.3rem;
+    }
+
+    .contact h2 {
+        font-size: 1.5rem;
     }
 }
