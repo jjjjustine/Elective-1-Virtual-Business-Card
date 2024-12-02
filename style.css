@@ -124,15 +124,142 @@ header .nav-links a:hover {
 
 /* Card Design */
 .card {
-    width: 300px;
-    height: 400px; /* Reduced height */
-    perspective: 1000px;
+    perspective: 1000px; /* Maintain perspective for 3D flip effect */
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    background-color: #1a1a2e;
+    transition: transform 0.3s ease; /* Smooth transition for hover/flip effects */
+}
+.cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+/* card 1 design*/
+.card-1 {
+    width: 320px; /* Adjust width for card 1 */
+    height: 533px; /* Adjust height for card 1 */
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for card 1 */
+}
+.card-1 .company-logo h3 {
+    color: #f4a261;
+}
+
+.card-1 .profile-image img {
+    border: 4px solid #f4a261;
+}
+/* Card back container */
+.card-back-1 {
+    background: url('/image/card\ back1.png') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds depth */
+    overflow: hidden;
+}
+.card-back-1 .company-name {
+    color: #f7f4f1; /* Ensure the same color as the front */
+    font-size: larger;
+}
+
+/* Company name styling */
+.company-name {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+}
+
+/* Logo container */
+.logo-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    border-radius: 50%; /* Adds a circular style to the logo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+}
+
+/* Social links container */
+.social-links {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the social media icons */
+    gap: 15px; /* Space between each social icon */
+    margin-top: 20px; /* Space above the social links */
+}
+
+.social-links a {
+    font-size: 1.5em; /* Increase icon size for better visibility */
+    color: #f7f2f2; /* Dark color for the icons */
+    transition: color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.social-links a:hover {
+    color: #f4a261; /* Change icon color on hover */
+}
+
+
+/* Company Logo Styling */
+.company-logo img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.company-logo h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    color: #f4a261;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Profile Image Styling */
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    border: 4px solid #f4a261;
+    margin-bottom: 20px;
+}
+
+/* Card Details Styling */
+.card-details h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-details .role {
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 10px 0;
+    background: #f4a261;
+    color: white;
+}
+
+.card-details .id-number {
+    font-size: 0.9em;
+    margin: 10px 0;
 }
 
 /* Hover effect to zoom (without flipping) */
@@ -140,19 +267,20 @@ header .nav-links a:hover {
     transform: scale(1.1); /* Slight zoom effect */
     z-index: 10; /* Keeps the hovered card above others */
 }
+.card.clicked .card-inner {
+    transform: rotateY(180deg); /* This rotates the card */
+}
 
 /* Card inner rotation will only happen on click (not hover) */
 .card-inner {
     width: 100%;
     height: 100%;
-    transition: transform 0.6s;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease;
     transform-style: preserve-3d;
-    position: relative;
 }
 
-.card.clicked .card-inner {
-    transform: rotateY(180deg); /* Flip effect on click */
-}
 
 /* Card Sides */
 .card-front,
@@ -170,7 +298,18 @@ header .nav-links a:hover {
 }
 
 .card-front {
-    background-color: #1a1a2e;
+    background-size: cover; /* Ensure the background covers the entire card */
+    background-position: center; /* Center the image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Ensure text is readable */
+}
+/*card front */
+.card-1 .card-front {
+    background-image: url('/image/card1\ front.png');
 }
 
 .card-back {
@@ -183,6 +322,19 @@ header .nav-links a:hover {
     align-items: center; /* Align items to the center */
     color: #fff;
     text-align: center;
+}
+.contact1 {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 20px; /* Space above the Contact Me section */
+}
+.contact1 .role{
+    font-size: 1.2em; /* Slightly larger font size for prominence */
+    padding: 10px 20px; /* Adjusted padding for better space around the text */
+    border-radius: 25px; /* More rounded corners */
+    background: #f4a261;
+    color: white;
+    display: inline-block; /* Keeps the role tag centered and inline */
+    margin-bottom: 20px; /* Adds space below the 'CONTACT ME' text */
 }
 /* Zoom effect on card hover */
 .card.zoom {
@@ -199,22 +351,12 @@ header .nav-links a:hover {
     text-align: center;
 }
 
-.company-logo img {
-    width: 50px;
-    margin-bottom: 10px;
-}
-
-.company-logo h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
 .profile-image img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 150px;  /* Increase the width of the image */
+    height: 150px; /* Increase the height of the image */
+    border-radius: 12px;
+    border: 4px solid #f4a261;
     margin-bottom: 20px;
-    border: 4px solid #fff;
 }
 
 .card-details h3 {
@@ -254,75 +396,6 @@ header .nav-links a:hover {
     color: #ffcc00;
 }
 
-/* About Us Section */
-.about {
-    background-color: #ffffff;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-.about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    justify-content: center; /* Center the content */
-}
-
-
-.about-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid #1a1a2e;
-    object-fit: cover;
-}
-
-.about p {
-    font-size: 1.1rem;
-    color: #666;
-    max-width: 600px;
-    line-height: 1.8;
-}
-/* Team Member */
-.team-member {
-    width: 250px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Image of the Team Member */
-.team-image {
-    width: 100%;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-.team {
-    display: flex;
-    justify-content: space-between; /* Distribute items evenly */
-    gap: 40px;
-    max-width: 100%; /* Ensures team section doesn't exceed container width */
-    overflow-x: auto; /* Allows scrolling if the content is wider than the screen */
-}
-/* Member Name Styling */
-.team-member h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #1a1a2e;
-}
-
-/* Member Description Styling */
-.team-member p {
-    font-size: 1rem;
-    color: #666;
-}
 /* Footer */
 footer {
     background-color: #1a1a2e;

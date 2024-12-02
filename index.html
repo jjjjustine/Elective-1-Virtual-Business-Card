@@ -9,9 +9,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
         <!-- Add Font Awesome for social media icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
         
     </head>
-    
 <body>
     <header>
         <div class="container">
@@ -20,8 +20,7 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Cards</a></li>
-                    <li><a href="#about">Team</a></li>
+                    <li><a href="#cards">Cards</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,55 +32,71 @@
             <p>
                 Dive into a showcase of visually appealing and interactive virtual business card designs. Witness the creativity of animations like flipping and zooming that redefine digital card presentations.
             </p>
-            <a href="#features" class="btn">Explore Cards</a>
+            <a href="#cards" class="btn">Explore Cards</a>
         </div>
     </section>
 
-    <section id="features" class="features">
+    <section id="cards" class="features">
         <div class="container">
             <h2>Virtual Business Cards</h2>
             <p>
                 These virtual business cards show cool designs with zooming and flipping effects. They can't be edited or shared, but they are great examples of how websites can be interactive and fun.
             </p>
+            <br><br/>
             <div class="grid">
                  <!-- Card 1 -->
-            <div class="card">
+            <div class="card card-1">
                 <div class="card-inner">
                     <!-- Front Side -->
                     <div class="card-front">
                         <div class="front-content">
+                            <!-- Company Logo -->
                             <div class="company-logo">
-                                <img src="logo.png" alt="Logo">
-                                <h3>INGOUDE COMPANY</h3>
+                                <img src="/image/logo_card_1-removebg-preview.png" alt="company-logo">
+                                <h3>HQR HOUSE</h3>
                             </div>
+                            
+                            <!-- Profile Image -->
                             <div class="profile-image">
-                                <img src="profile.jpg" alt="Profile Photo">
+                                <img src="/image/justine.jpg" alt="Profile Photo">
                             </div>
+                            
+                            <!-- Card Details -->
                             <div class="card-details">
+                                <h2>Jane Justine Catingan</h2>
+                                <p class="role">INFORMATION TECHNOLOGY</p>
                                 <br><br/>
-                                <h3>HAE-WON JEON</h3>
-                                <p>MARKETING MANAGER</p>
-                                <a href="http://www.reallygreatsite.com">www.reallygreatsite.com</a>
+                                <p class="id-number">ID Number: 1234567890</p>
                             </div>
                         </div>
                     </div>
                     <!-- Back Side -->
-                    <div class="card-back">
-                        <div class="back-content">
-                            <h3>INGOUDE COMPANY</h3>
-                            <ul>
-                                <li><a href="tel:+1234567890" class="contact-link"><i class="fa fa-phone"></i> +123-456-7890</a></li>
-                                <li><a href="mailto:hello@reallygreatsite.com" class="contact-link"><i class="fa fa-envelope"></i> hello@reallygreatsite.com</a></li>
-                                <li><a href="http://www.reallygreatsite.com" target="_blank" class="contact-link"><i class="fa fa-globe"></i> www.reallygreatsite.com</a></li>
-                                <li><a href="https://goo.gl/maps/xyz" target="_blank" class="contact-link"><i class="fa fa-map-marker"></i> 123 Anywhere St., Any City</a></li>
-                            </ul>
+                    <div class="card-back card-back-1">
+                        <h3 class="company-name">HQR HOUSE</h3>
+                        <div class="logo-container">
+                            <img src="/image/logo_card_1-removebg-preview.png" alt="Company Logo" class="company-logo" height="250px">
                         </div>
-                    </div>    
-                </div>
-            </div>
-
+                        <div class="contact1">
+                        <p class="role">CONTACT ME</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank" aria-label="github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>     
+                    </div>
+                </div>                
             <!-- Card 2 -->
-            <div class="card">
+            <div class="card card-2">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="front-content">
@@ -114,7 +129,7 @@
                 </div>
             </div>
             <!-- Card 3 -->
-            <div class="card">
+            <div class="card card-3">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="front-content">
@@ -147,7 +162,7 @@
                 </div>
             </div>
             <!-- Card 4 -->
-            <div class="card">
+            <div class="card card-4">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="front-content">
@@ -181,41 +196,43 @@
             </div> 
             </div>
         </div>
-        
-    </section>
-    
-    
-    <section id="about" class="about">
-        <div class="container">
-            <h2><strong>Team Members</strong></h2>
-            <div class="about-content">
-               <br><br/>
-                <div class="team">
-                    <!-- Team Member 1 -->
-                    <div class="team-member">
-                        <img src="./image/justine.jpg" alt="Team Member 1" class="team-image">
-                        <h3>Jane Justine Catingan</h3>
-                    </div>
-                    <!-- Team Member 2 -->
-                    <div class="team-member">
-                        <img src="./image/lylle.jpg" alt="Team Member 2" class="team-image">
-                        <h3>Lylle Andrei Subesa</h3>
-                    </div>
-                    <!-- Team Member 3 -->
-                    <div class="team-member">
-                        <img src="member3.jpg" alt="Team Member 3" class="team-image">
-                        <h3>Member 3</h3>
-                    </div>
-                    <!-- Team Member 4 -->
-                    <div class="team-member">
-                        <img src="member4.jpg" alt="Team Member 4" class="team-image">
-                        <h3>Member 4</h3>
+        <!--- card 5 --->
+        <div class="card card-5">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="front-content">
+                        <div class="company-logo">
+                            <img src="logo.png" alt="Logo">
+                            <h3>INGOUDE COMPANY</h3>
+                        </div>
+                        <div class="profile-image">
+                            <img src="profile.jpg" alt="Profile Photo">
+                        </div>
+                        <div class="card-details">
+                            <br><br/>
+                            <h3>HAE-WON JEON</h3>
+                            <p>MARKETING MANAGER</p>
+                            <a href="http://www.reallygreatsite.com">www.reallygreatsite.com</a>
+                        </div>
                     </div>
                 </div>
+                <div class="card-back">
+                    <div class="back-content">
+                        <h3>INGOUDE COMPANY</h3>
+                        <ul>
+                            <li><a href="tel:+1234567890" class="contact-link"><i class="fa fa-phone"></i> +123-456-7890</a></li>
+                            <li><a href="mailto:hello@reallygreatsite.com" class="contact-link"><i class="fa fa-envelope"></i> hello@reallygreatsite.com</a></li>
+                            <li><a href="http://www.reallygreatsite.com" target="_blank" class="contact-link"><i class="fa fa-globe"></i> www.reallygreatsite.com</a></li>
+                            <li><a href="https://goo.gl/maps/xyz" target="_blank" class="contact-link"><i class="fa fa-map-marker"></i> 123 Anywhere St., Any City</a></li>
+                        </ul>
+                    </div>
+                </div>    
             </div>
+        </div> 
         </div>
+    </div>
+
     </section>
-    
     <footer>
         <div class="container">
             <p>&copy; 2024 Virtual Business Card. All Rights Reserved.</p>
