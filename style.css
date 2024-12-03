@@ -142,13 +142,7 @@ header .nav-links a:hover {
     background-size: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for card 1 */
 }
-.card-1 .company-logo h3 {
-    color: #f4a261;
-}
 
-.card-1 .profile-image1 img {
-    border: 4px solid #f4a261;
-}
 /* Card back container */
 .card-back-1 {
     background: url('./image/card\ back1.png') ;
@@ -171,6 +165,16 @@ header .nav-links a:hover {
     color: #f7f4f1; /* Ensure the same color as the front */
     font-size: larger;
 }
+.card-details a {
+    color: #f4a261; /* Match the color theme */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Highlight the text */
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.card-details a:hover {
+    color: #ffcc00; /* Change color on hover for a better visual effect */
+}
 
 /* Company name styling */
 .company-name {
@@ -182,20 +186,6 @@ header .nav-links a:hover {
     color: #ffffff;
 }
 
-/* Logo container */
-.logo-container {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo {
-    width: 100px;
-    height: auto;
-    border-radius: 50%; /* Adds a circular style to the logo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 /* Social links container */
 .social-links {
     display: flex; /* Use flexbox for horizontal alignment */
@@ -233,8 +223,8 @@ header .nav-links a:hover {
 
 /* Profile Image Styling */
 .profile-image1 img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 12px;
     border: 4px solid #f4a261;
     margin-bottom: 20px;
@@ -267,7 +257,7 @@ header .nav-links a:hover {
     z-index: 10; /* Keeps the hovered card above others */
 }
 .card.clicked .card-inner {
-    transform: rotateY(180deg); /* This rotates the card */
+    transform: rotateY(180deg);
 }
 
 /* Card inner rotation will only happen on click (not hover) */
@@ -297,6 +287,7 @@ header .nav-links a:hover {
 }
 
 .card-front {
+    background-image: url('./image/card1\ front.png');
     background-size: cover; /* Ensure the background covers the entire card */
     background-position: center; /* Center the image */
     display: flex;
@@ -306,10 +297,7 @@ header .nav-links a:hover {
     text-align: center;
     color: #fff; /* Ensure text is readable */
 }
-/*card front */
-.card-1 .card-front {
-    background-image: url('./image/card1\ front.png');
-}
+/*card 2 */
 .card-2 {
     width: 320px;
     height: 533px;
@@ -318,20 +306,8 @@ header .nav-links a:hover {
     position: relative;
 }
 .card-2 .card-front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url('./image/card2\ front-back.png') no-repeat center/cover; /* Add front background */
-    border-radius: 10px;
-    backface-visibility: hidden; /* Hide the back face */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    color: #fff;
+    background: url('./image/card2\ front-back.png') no-repeat center/cover;
+ 
 }
 .card-back-2 .company-logo2 {
     text-align: center; /* Center the content within the logo section */
@@ -441,16 +417,125 @@ header .nav-links a:hover {
     margin-right: 10px;
     font-size: 18px;
 }
-.card-back {
-    background-color: #16213e;
-    transform: rotateY(180deg);
-    padding: 20px;
+/* card 3 */
+.card-3 .card-front {
+    background: url('./image/card\ 3\ front\ back.png') no-repeat center/cover;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Ensure the content is centered */
-    align-items: center; /* Align items to the center */
-    color: #fff;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.card-3 {
+    width: 320px;
+    height: 533px;
+    perspective: 1000px;
+}
+.card-3 .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.card-3 .company-logo3 h3 {
+    font-family: 'Georgia', serif; /* Serif font for elegance */
+    font-size: 22px;
+    color: #2a4168;
+    margin: 5px 0;
+} 
+.company-logo3 {
     text-align: center;
+    margin-top: -70px;
+}
+.card-3 .company-logo img {
+    height: 200px; /* Adjusted logo size */
+    width: 150px;
+    margin-bottom: 10px;
+}
+.card-3 .card-details p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    bottom: 30px; 
+    position: absolute;
+    color: #f5f6f7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.card-3 .card-back-3 {
+    background: url('./image/card\ 3\ front\ back.png') no-repeat center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    border-radius: 10px;
+    text-align: left;
+    padding: 40px 30px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Add space between sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-back-3 .back-content {
+    display: flex;
+    flex-direction: column; /* Stack the profile and contact info vertically */
+    justify-content: flex-start; /* Keep profile content at the top */
+    height: 100%; /* Ensure it takes full height */
+}
+.card-back-3 .Latcha img {
+    height: 180px; /* Make the image bigger */
+    width: 150px;  /* Make the image a square */
+    border-radius: 5px;  /* Change to square edges */
+    margin-bottom: 20px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-back-3 .back-content {
+    display: flex;
+    flex-direction: column; /* Stack the profile and contact info vertically */
+    justify-content: flex-start; /* Keep profile content at the top */
+    height: 100%; /* Ensure it takes full height */
+    padding-top: 50px;
+}
+.card-back-3 .position {
+    font-family: 'Georgia', serif;
+    font-size: 22px;
+    color: #2a4168;
+    text-align: center;
+    margin-top: 10px;
+}
+.card-back-3 h3 {
+    font-family: 'Georgia', serif;
+    font-size: 22px;
+    color: #2a4168;
+    text-align: center;
+    margin-top: 10px;
+}
+.card-back-3 .contact-info {
+    text-align: center;
+    color: white;
+    margin-top: auto;
+}
+.card-back-3 .contact-info p {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.card-back-3 .details p {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    color: #2a4168;
+    text-align: center;
+    line-height: 1.5;
 }
 .contact1 {
     text-align: center; /* Center the content horizontally */
@@ -472,54 +557,7 @@ header .nav-links a:hover {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Front Content */
-.front-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.profile-image img {
-    width: 150px;  /* Increase the width of the image */
-    height: 150px; /* Increase the height of the image */
-    border-radius: 12px;
-    border: 4px solid #f4a261;
-    margin-bottom: 20px;
-}
-
-.card-details h3 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-}
-
-.card-details p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-.card-details a {
-    color: #ffcc00;
-    text-decoration: none;
-}
-
 /* Back Content */
-.back-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.back-content ul {
-    list-style: none;
-}
-
-.back-content li {
-    font-size: 1rem;
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-}
-
 .back-content i {
     margin-right: 10px;
     color: #ffcc00;
@@ -566,43 +604,6 @@ footer .social-links a:hover {
     font-size: 1.5rem;
     margin-bottom: 20px;
     color: #ffcc00;
-}
-
-/* List styling */
-.card-back ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column; /* Align items vertically */
-    gap: 10px; /* Space between list items */
-    align-items: center; /* Center align list items */
-}
-
-/* List items */
-.card-back li {
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; /* Space between icon and text */
-}
-
-/* Icon styling */
-.card-back .fa {
-    font-size: 1.3rem;
-    color: #ffcc00;
-}
-
-/* Links styling */
-.contact-link {
-    text-decoration: none;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: color 0.3s ease;
 }
 
 /* Hover effect for links */
