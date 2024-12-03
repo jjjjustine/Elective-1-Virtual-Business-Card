@@ -114,21 +114,21 @@ header .nav-links a:hover {
 }
 
 .grid {
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(5, 1fr); /* 5 columns */
-    grid-template-rows: repeat(2, 1fr); /* 2 rows */
-    gap: 30px; /* Space between cards */
-    justify-content: center; /* Center the grid horizontally */
-    align-items: start; /* Align items to the top */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Flexible card sizes */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the cards in the container */
+    align-items: stretch; /* Match card heights */
 }
 
 /* Card Design */
 .card {
-    perspective: 1000px; /* Maintain perspective for 3D flip effect */
+    width: 100%; /* Let the card size adapt to the grid cell */
+    height: auto;
+    overflow: hidden;
     position: relative;
     border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.3s ease; /* Smooth transition for hover/flip effects */
+    transition: all 0.3s ease;
 }
 .cards-container {
     display: flex;
@@ -146,7 +146,7 @@ header .nav-links a:hover {
     color: #f4a261;
 }
 
-.card-1 .profile-image img {
+.card-1 .profile-image1 img {
     border: 4px solid #f4a261;
 }
 /* Card back container */
@@ -196,7 +196,6 @@ header .nav-links a:hover {
     border-radius: 50%; /* Adds a circular style to the logo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 /* Social links container */
 .social-links {
     display: flex; /* Use flexbox for horizontal alignment */
@@ -233,7 +232,7 @@ header .nav-links a:hover {
 }
 
 /* Profile Image Styling */
-.profile-image img {
+.profile-image1 img {
     width: 120px;
     height: 120px;
     border-radius: 12px;
@@ -311,7 +310,137 @@ header .nav-links a:hover {
 .card-1 .card-front {
     background-image: url('./image/card1\ front.png');
 }
+.card-2 {
+    width: 320px;
+    height: 533px;
+    perspective: 1000px; /* Enables 3D effect */
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+.card-2 .card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('./image/card2\ front-back.png') no-repeat center/cover; /* Add front background */
+    border-radius: 10px;
+    backface-visibility: hidden; /* Hide the back face */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+}
+.card-back-2 .company-logo2 {
+    text-align: center; /* Center the content within the logo section */
+    padding: 20px;
+}
 
+.card-back-2 .company-logo2 img {
+    width: 60px; /* Slightly larger logo */
+    height: 60px; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space between logo and text */
+    border-radius: 50%; /* Optional: makes the logo rounded if it's a square */
+    object-fit: cover; /* Ensures the logo fits well in the container */
+}
+
+.card-back-2 .company-logo2 h3 {
+    font-size: 22px; /* Increase the font size of the company name */
+    font-weight: 700; /* Bold font weight */
+    text-align: center;
+    color: #f4efef; /* Ensure good contrast */
+}
+.card-2 .profile-wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 5px solid #2C2C2C; /* Matches the border color in the design */
+}
+.card-2 .profile-image2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-2 .card-details h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.card-2 .card-details p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-2 .card-details a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.card-2 .card-back-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('./image/card2 front-back.png') no-repeat center/cover;
+    color: white;
+    border-radius: 10px;
+    text-align: left;
+    padding: 40px 30px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden; /* Hides front face */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-back-2 .back-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-back-2 .back-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.card-back-2 .back-content li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.card-back-2 .back-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.card-back-2 .back-content a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
 .card-back {
     background-color: #16213e;
     transform: rotateY(180deg);
