@@ -309,7 +309,7 @@ header .nav-links a:hover {
 }
 /*card front */
 .card-1 .card-front {
-    background-image: url('/image/card1\ front.png');
+    background-image: url('./image/card1\ front.png');
 }
 
 .card-back {
