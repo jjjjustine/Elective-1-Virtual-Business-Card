@@ -21,17 +21,23 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 /* Style for header when clicked */
 .header-clicked {
-    background-color: #333;  /* Change to any color you prefer */
-    color: #fff;  /* Text color change */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add shadow */
-    transition: all 0.3s ease;  /* Smooth transition effect */
+    background-color: #333;
+    /* Change to any color you prefer */
+    color: #fff;
+    /* Text color change */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add shadow */
+    transition: all 0.3s ease;
+    /* Smooth transition effect */
 }
 
 /* Add some hover effect for the links */
 .nav-links a:hover {
-    color: #ff6347;  /* Hover color */
+    color: #ff6347;
+    /* Hover color */
     transition: color 0.3s ease;
 }
 
@@ -99,53 +105,70 @@ header .nav-links a:hover {
 
 /* Features Section */
 .features {
-    text-align: center; /* Center-align text content */
-    padding: 60px 20px; /* Add padding around the section */
-    background-color: #f9f9f9; /* Subtle background color */
+    text-align: center;
+    /* Center-align text content */
+    padding: 60px 20px;
+    /* Add padding around the section */
+    background-color: #f9f9f9;
+    /* Subtle background color */
 }
 
 .features h2 {
-    font-size: 2.5rem; /* Increase font size for the heading */
-    font-weight: bold; /* Make the heading bold */
-    margin-bottom: 40px; /* Add space below the heading */
-    color: #333; /* Dark gray color for the text */
-    text-transform: uppercase; /* Make the heading uppercase */
-    letter-spacing: 2px; /* Add letter spacing for better readability */
+    font-size: 2.5rem;
+    /* Increase font size for the heading */
+    font-weight: bold;
+    /* Make the heading bold */
+    margin-bottom: 40px;
+    /* Add space below the heading */
+    color: #333;
+    /* Dark gray color for the text */
+    text-transform: uppercase;
+    /* Make the heading uppercase */
+    letter-spacing: 2px;
+    /* Add letter spacing for better readability */
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Flexible card sizes */
-    gap: 20px; /* Space between cards */
-    justify-content: center; /* Center the cards in the container */
-    align-items: stretch; /* Match card heights */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    /* Flexible card sizes */
+    gap: 20px;
+    /* Space between cards */
+    justify-content: center;
+    /* Center the cards in the container */
+    align-items: stretch;
+    /* Match card heights */
 }
 
 /* Card Design */
 .card {
-    width: 100%; /* Let the card size adapt to the grid cell */
+    width: 100%;
+    /* Let the card size adapt to the grid cell */
     height: auto;
     overflow: hidden;
     position: relative;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
+
 .cards-container {
     display: flex;
     gap: 20px;
     justify-content: center;
 }
+
 /* card 1 design*/
 .card-1 {
-    width: 320px; /* Adjust width for card 1 */
-    height: 533px; /* Adjust height for card 1 */
+    width: 320px;
+    height: 533px;
     background-size: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for card 1 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Shadow for card 1 */
 }
 
 /* Card back container */
 .card-back-1 {
-    background: url('./image/card\ back1.png') ;
+    background: url('./image/card\ back1.png');
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -158,26 +181,39 @@ header .nav-links a:hover {
     text-align: center;
     padding: 30px 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Adds depth */
     overflow: hidden;
 }
+
 .contact1 {
-    text-align: center; /* Center the content horizontally */
-    margin-top: 20px; /* Space above the Contact Me section */
+    text-align: center;
+    /* Center the content horizontally */
+    margin-top: 20px;
+    /* Space above the Contact Me section */
 }
-.contact1 .role{
-    font-size: 1.2em; /* Slightly larger font size for prominence */
-    padding: 10px 20px; /* Adjusted padding for better space around the text */
-    border-radius: 25px; /* More rounded corners */
+
+.contact1 .role {
+    font-size: 1.2em;
+    /* Slightly larger font size for prominence */
+    padding: 10px 20px;
+    /* Adjusted padding for better space around the text */
+    border-radius: 25px;
+    /* More rounded corners */
     background: #f4a261;
     color: white;
-    display: inline-block; /* Keeps the role tag centered and inline */
-    margin-bottom: 20px; /* Adds space below the 'CONTACT ME' text */
+    display: inline-block;
+    /* Keeps the role tag centered and inline */
+    margin-bottom: 20px;
+    /* Adds space below the 'CONTACT ME' text */
 }
+
 .card-back-1 .company-name {
-    color: #f7f4f1; /* Ensure the same color as the front */
+    color: #f7f4f1;
+    /* Ensure the same color as the front */
     font-size: larger;
 }
+
 /* Company name styling */
 .company-name {
     font-size: 2em;
@@ -190,20 +226,28 @@ header .nav-links a:hover {
 
 /* Social links container */
 .social-links {
-    display: flex; /* Use flexbox for horizontal alignment */
-    justify-content: center; /* Center the social media icons */
-    gap: 15px; /* Space between each social icon */
-    margin-top: 20px; /* Space above the social links */
+    display: flex;
+    /* Use flexbox for horizontal alignment */
+    justify-content: center;
+    /* Center the social media icons */
+    gap: 15px;
+    /* Space between each social icon */
+    margin-top: 20px;
+    /* Space above the social links */
 }
 
 .social-links a {
-    font-size: 1.5em; /* Increase icon size for better visibility */
-    color: #f7f2f2; /* Dark color for the icons */
-    transition: color 0.3s ease-in-out; /* Smooth hover effect */
+    font-size: 1.5em;
+    /* Increase icon size for better visibility */
+    color: #f7f2f2;
+    /* Dark color for the icons */
+    transition: color 0.3s ease-in-out;
+    /* Smooth hover effect */
 }
 
 .social-links a:hover {
-    color: #f4a261; /* Change icon color on hover */
+    color: #f4a261;
+    /* Change icon color on hover */
 }
 
 
@@ -255,9 +299,12 @@ header .nav-links a:hover {
 
 /* Hover effect to zoom (without flipping) */
 .card:hover {
-    transform: scale(1.1); /* Slight zoom effect */
-    z-index: 10; /* Keeps the hovered card above others */
+    transform: scale(1.1);
+    /* Slight zoom effect */
+    z-index: 10;
+    /* Keeps the hovered card above others */
 }
+
 .card.clicked .card-inner {
     transform: rotateY(180deg);
 }
@@ -290,46 +337,63 @@ header .nav-links a:hover {
 
 .card-front {
     background-image: url('./image/card1\ front.png');
-    background-size: cover; /* Ensure the background covers the entire card */
-    background-position: center; /* Center the image */
+    background-size: cover;
+    /* Ensure the background covers the entire card */
+    background-position: center;
+    /* Center the image */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     text-align: center;
-    color: #fff; /* Ensure text is readable */
+    color: #fff;
+    /* Ensure text is readable */
 }
+
 /*card 2 */
 .card-2 {
     width: 320px;
     height: 533px;
-    perspective: 1000px; /* Enables 3D effect */
+    perspective: 1000px;
+    /* Enables 3D effect */
     font-family: 'Arial', sans-serif;
     position: relative;
 }
+
 .card-2 .card-front {
     background: url('./image/card2\ front-back.png') no-repeat center/cover;
- 
+
 }
+
 .card-back-2 .company-logo2 {
-    text-align: center; /* Center the content within the logo section */
+    text-align: center;
+    /* Center the content within the logo section */
     padding: 20px;
 }
 
 .card-back-2 .company-logo2 img {
-    width: 60px; /* Slightly larger logo */
-    height: 60px; /* Maintain aspect ratio */
-    margin-bottom: 15px; /* Space between logo and text */
-    border-radius: 50%; /* Optional: makes the logo rounded if it's a square */
-    object-fit: cover; /* Ensures the logo fits well in the container */
+    width: 60px;
+    /* Slightly larger logo */
+    height: 60px;
+    /* Maintain aspect ratio */
+    margin-bottom: 15px;
+    /* Space between logo and text */
+    border-radius: 50%;
+    /* Optional: makes the logo rounded if it's a square */
+    object-fit: cover;
+    /* Ensures the logo fits well in the container */
 }
 
 .card-back-2 .company-logo2 h3 {
-    font-size: 22px; /* Increase the font size of the company name */
-    font-weight: 700; /* Bold font weight */
+    font-size: 22px;
+    /* Increase the font size of the company name */
+    font-weight: 700;
+    /* Bold font weight */
     text-align: center;
-    color: #f4efef; /* Ensure good contrast */
+    color: #f4efef;
+    /* Ensure good contrast */
 }
+
 .card-2 .profile-wrapper {
     position: relative;
     width: 150px;
@@ -341,13 +405,16 @@ header .nav-links a:hover {
     align-items: center;
     overflow: hidden;
     margin-bottom: 20px;
-    border: 5px solid #2C2C2C; /* Matches the border color in the design */
+    border: 5px solid #2C2C2C;
+    /* Matches the border color in the design */
 }
+
 .card-2 .profile-image2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .card-2 .card-details h3 {
     font-size: 22px;
     font-weight: bold;
@@ -379,7 +446,8 @@ header .nav-links a:hover {
     text-align: left;
     padding: 40px 30px;
     transform: rotateY(180deg);
-    backface-visibility: hidden; /* Hides front face */
+    backface-visibility: hidden;
+    /* Hides front face */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -387,6 +455,7 @@ header .nav-links a:hover {
     gap: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .card-back-2 .back-content h3 {
     font-size: 20px;
     font-weight: bold;
@@ -419,6 +488,7 @@ header .nav-links a:hover {
     margin-right: 10px;
     font-size: 18px;
 }
+
 /* card 3 */
 .card-3 .card-front {
     background: url('./image/card\ 3\ front\ back.png') no-repeat center/cover;
@@ -432,41 +502,50 @@ header .nav-links a:hover {
     justify-content: center;
     padding: 20px;
 }
+
 .card-3 {
     width: 320px;
     height: 533px;
     perspective: 1000px;
 }
+
 .card-3 .card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
 }
+
 .card-3 .company-logo3 h3 {
-    font-family: 'Georgia', serif; /* Serif font for elegance */
+    font-family: 'Georgia', serif;
+    /* Serif font for elegance */
     font-size: 22px;
     color: #2a4168;
     margin: 5px 0;
-} 
+}
+
 .company-logo3 {
     text-align: center;
     margin-top: -70px;
 }
+
 .card-3 .company-logo img {
-    height: 200px; /* Adjusted logo size */
+    height: 200px;
+    /* Adjusted logo size */
     width: 150px;
     margin-bottom: 10px;
 }
+
 .card-3 .card-details p {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
-    bottom: 30px; 
+    bottom: 30px;
     position: absolute;
     color: #f5f6f7;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 .card-3 .card-back-3 {
     background: url('./image/card\ 3\ front\ back.png') no-repeat center/cover;
     position: absolute;
@@ -479,33 +558,48 @@ header .nav-links a:hover {
     transform: rotateY(180deg);
     backface-visibility: hidden;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: space-between; /* Add space between sections */
+    flex-direction: column;
+    /* Stack elements vertically */
+    justify-content: space-between;
+    /* Add space between sections */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .card-back-3 .back-content {
     display: flex;
-    flex-direction: column; /* Stack the profile and contact info vertically */
-    justify-content: flex-start; /* Keep profile content at the top */
-    height: 100%; /* Ensure it takes full height */
+    flex-direction: column;
+    /* Stack the profile and contact info vertically */
+    justify-content: flex-start;
+    /* Keep profile content at the top */
+    height: 100%;
+    /* Ensure it takes full height */
 }
+
 .card-back-3 .Latcha img {
-    height: 180px; /* Make the image bigger */
-    width: 150px;  /* Make the image a square */
-    border-radius: 5px;  /* Change to square edges */
+    height: 180px;
+    /* Make the image bigger */
+    width: 150px;
+    /* Make the image a square */
+    border-radius: 5px;
+    /* Change to square edges */
     margin-bottom: 20px;
     object-fit: cover;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 .card-back-3 .back-content {
     display: flex;
-    flex-direction: column; /* Stack the profile and contact info vertically */
-    justify-content: flex-start; /* Keep profile content at the top */
-    height: 100%; /* Ensure it takes full height */
+    flex-direction: column;
+    /* Stack the profile and contact info vertically */
+    justify-content: flex-start;
+    /* Keep profile content at the top */
+    height: 100%;
+    /* Ensure it takes full height */
     padding-top: 50px;
 }
+
 .card-back-3 .position {
     font-family: 'Georgia', serif;
     font-size: 22px;
@@ -513,6 +607,7 @@ header .nav-links a:hover {
     text-align: center;
     margin-top: 10px;
 }
+
 .card-back-3 h3 {
     font-family: 'Georgia', serif;
     font-size: 22px;
@@ -520,11 +615,13 @@ header .nav-links a:hover {
     text-align: center;
     margin-top: 10px;
 }
+
 .card-back-3 .contact-info {
     text-align: center;
     color: white;
     margin-top: auto;
 }
+
 .card-back-3 .contact-info p {
     font-family: 'Arial', sans-serif;
     font-size: 14px;
@@ -532,6 +629,7 @@ header .nav-links a:hover {
     text-align: center;
     margin-bottom: 0px;
 }
+
 .card-back-3 .details p {
     font-family: 'Arial', sans-serif;
     font-size: 12px;
@@ -542,8 +640,10 @@ header .nav-links a:hover {
 
 /* Zoom effect on card hover */
 .card.zoom {
-    transform: scale(1.2); /* Scales the card */
-    z-index: 10; /* Keeps the clicked card above others */
+    transform: scale(1.2);
+    /* Scales the card */
+    z-index: 10;
+    /* Keeps the clicked card above others */
     transition: transform 0.3s ease-in-out;
 }
 
@@ -555,13 +655,13 @@ header .nav-links a:hover {
 
 /*card-4*/
 .card-4 {
-    width: 520px;
-    height: 303px;
+    width: 320px;
+    height: 530px;
     perspective: 1000px;
 }
 
 .card-4 .card-front {
-    background: url('./image/card\ 4.png') no-repeat center/cover;
+    background: url('./image/card\ 4\ front\ back.png') no-repeat center/cover;
     color: #fff;
     border-radius: 10px;
     display: flex;
@@ -593,10 +693,10 @@ header .nav-links a:hover {
     font-weight: bold;
 }
 
-.card-details-4  {
+.card-details-4 {
     text-align: left;
-    
-    
+
+
 }
 
 .card-details-4 h3 {
@@ -632,7 +732,7 @@ header .nav-links a:hover {
 }
 
 .card-4 .card-back-4 {
-    background: url('./image/card\ 4\ back.png') no-repeat center/cover;
+    background: url('./image/card\ 4\ front\ back.png') no-repeat center/cover;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -643,14 +743,18 @@ header .nav-links a:hover {
     transform: rotateY(180deg);
     backface-visibility: hidden;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: space-between; /* Add space between sections */
+    flex-direction: column;
+    /* Stack elements vertically */
+    justify-content: space-between;
+    /* Add space between sections */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.logo-back h3{
+
+.logo-back h3 {
     text-align: center;
     color: #1a1a2e;
 }
+
 /* end of card 4 */
 /* Footer */
 footer {
@@ -683,7 +787,6 @@ footer .social-links a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     color: #fff;
     text-align: center;
 }
