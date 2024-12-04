@@ -161,21 +161,23 @@ header .nav-links a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds depth */
     overflow: hidden;
 }
+.contact1 {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 20px; /* Space above the Contact Me section */
+}
+.contact1 .role{
+    font-size: 1.2em; /* Slightly larger font size for prominence */
+    padding: 10px 20px; /* Adjusted padding for better space around the text */
+    border-radius: 25px; /* More rounded corners */
+    background: #f4a261;
+    color: white;
+    display: inline-block; /* Keeps the role tag centered and inline */
+    margin-bottom: 20px; /* Adds space below the 'CONTACT ME' text */
+}
 .card-back-1 .company-name {
     color: #f7f4f1; /* Ensure the same color as the front */
     font-size: larger;
 }
-.card-details a {
-    color: #f4a261; /* Match the color theme */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Highlight the text */
-    transition: color 0.3s ease; /* Smooth transition effect */
-}
-
-.card-details a:hover {
-    color: #ffcc00; /* Change color on hover for a better visual effect */
-}
-
 /* Company name styling */
 .company-name {
     font-size: 2em;
@@ -537,19 +539,7 @@ header .nav-links a:hover {
     text-align: center;
     line-height: 1.5;
 }
-.contact1 {
-    text-align: center; /* Center the content horizontally */
-    margin-top: 20px; /* Space above the Contact Me section */
-}
-.contact1 .role{
-    font-size: 1.2em; /* Slightly larger font size for prominence */
-    padding: 10px 20px; /* Adjusted padding for better space around the text */
-    border-radius: 25px; /* More rounded corners */
-    background: #f4a261;
-    color: white;
-    display: inline-block; /* Keeps the role tag centered and inline */
-    margin-bottom: 20px; /* Adds space below the 'CONTACT ME' text */
-}
+
 /* Zoom effect on card hover */
 .card.zoom {
     transform: scale(1.2); /* Scales the card */
@@ -563,6 +553,105 @@ header .nav-links a:hover {
     color: #ffcc00;
 }
 
+/*card-4*/
+.card-4 {
+    width: 520px;
+    height: 303px;
+    perspective: 1000px;
+}
+
+.card-4 .card-front {
+    background: url('./image/card\ 4.png') no-repeat center/cover;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.front-content-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-logo-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-logo-4 img {
+    width: 50px;
+    margin-bottom: 5px;
+}
+
+.card-logo-4 h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-details-4  {
+    text-align: left;
+    
+    
+}
+
+.card-details-4 h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+.card-details-4 p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.contact-info-4 p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info-4 i {
+    color: #00aaff;
+    font-size: 18px;
+}
+
+.contact-info-4 a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.contact-info-4 a:hover {
+    text-decoration: underline;
+}
+
+.card-4 .card-back-4 {
+    background: url('./image/card\ 4\ back.png') no-repeat center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    border-radius: 10px;
+    text-align: left;
+    padding: 40px 30px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Add space between sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.logo-back h3{
+    text-align: center;
+    color: #1a1a2e;
+}
+/* end of card 4 */
 /* Footer */
 footer {
     background-color: #1a1a2e;
@@ -586,7 +675,7 @@ footer .social-links a:hover {
     color: #ffcc00;
 }
 
-/* New Back Content Styles */
+/* card-1 style links on the back */
 .card-back {
     background-color: #16213e;
     transform: rotateY(180deg);
