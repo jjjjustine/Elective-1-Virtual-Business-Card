@@ -739,7 +739,7 @@ header .nav-links a:hover {
 
 /* START OF CARD-5 */
 .card-5 .card-front {
-    background: url('./image/card-5\ front.png') no-repeat center/cover; 
+    background: url('./image/Background.png') no-repeat center/cover; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -764,24 +764,31 @@ header .nav-links a:hover {
     transition: transform 0.8s;
 }
 .card-5 .profile-photo img {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 145px;
     border-radius: 50%;
     border: 3px solid #fff;
 }
-.card-5 .card-details-5 h3 {
+.card-5 .card-details-5 h2 {
     margin: 10px 0 5px;
     font-size: 22px;
     text-align: center;
-    color: #fff;
+    color: wheat;
+}
+.card-5 .card-details-5 h5 {
+    margin: 10px 0 5px;
+    font-size: 22px;
+    text-align: center;
+    color: wheat;
 }
 .card-5 .card-details-5 p {
     font-size: 16px;
     text-align: center;
-    color: #fff;
+    color: wheat;
+    
 }
 .card-5 .card-back {
-    background: url('/image/CARD\ 5-BACK.png') no-repeat center/cover;
+    background: url('./image/BACK LOGO STYLE.png') no-repeat center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
